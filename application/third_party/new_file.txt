@@ -10,6 +10,7 @@ newnew
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -18,3 +19,8 @@ newnew
 =======
 privet
 >>>>>>> cf1c3ce1ac48f9dd58af27253b91c859365aa98b
+=======
+privet
+
+Äàðîóó
+>>>>>>> 6f866e7981b81ec3cb9fae95fdcd5d8a2e2b77e8
