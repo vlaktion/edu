@@ -1,7 +1,8 @@
 lalala.php
-dfgdfgd
-gdf
-gdfgdfg
+
 
 
 oh lalal lala oh lalala
+
+
+пиши вирус Влад, ложи винду
