@@ -109,7 +109,7 @@ class MY_Controller extends CI_Controller
         if ($this->view !== FALSE)
         {
             // If $this->view isn't empty, load it. If it isn't, try and guess based on the controller and action name
-            $view = (!empty($this->view)) ? $this->view : $this->router->directory . $this->router->class . '/' . $this->router->method;
+            $view = (!empty($this->view)) ? $this->view : $this->router->directory . strtolower($this->router->class) . '/' . $this->router->method;
 
             // Load the view into $yield
             $data['yield'] = $this->load->view($view, $this->data, TRUE);
