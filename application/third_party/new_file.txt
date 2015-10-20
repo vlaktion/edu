@@ -9,4 +9,18 @@ newnew
 >>>>>>> 5da0dc487a0068cdc5b4ef58134b20c10367832d
 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+
+
+Справа цмс
+=======
 privet
+>>>>>>> cf1c3ce1ac48f9dd58af27253b91c859365aa98b
+=======
+privet
+
+Дароуу
+>>>>>>> 6f866e7981b81ec3cb9fae95fdcd5d8a2e2b77e8
