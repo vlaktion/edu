@@ -1,0 +1,9 @@
+diff a/application/core/MY_Controller.php b/application/core/MY_Controller.php	(rejected hunks)
+@@ -9,6 +9,7 @@
+ 
+ class MY_Controller extends CI_Controller
+ {
++111
+     /* --------------------------------------------------------------
+      * VARIABLES
+      * ------------------------------------------------------------ */
