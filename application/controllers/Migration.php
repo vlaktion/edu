@@ -10,8 +10,6 @@ class Migration extends CI_Controller
 
     public function index()
     {
-        
-
         echo '<a href="' . base_url('migration/run/0') . '">rollback</a><br>';
         foreach($this->migration->find_migrations() as $version => $migration) {
         	echo '<a href="' . base_url('migration/run/' . $version) . '">' . $migration . '</a><br>';
