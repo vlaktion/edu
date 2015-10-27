@@ -1,22 +1,21 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-<<<<<<< HEAD
+
 class Auth extends MY_Controller {
-=======
-class Auth extends CI_Controller {
->>>>>>> 9f602bbec581c99a247f997abeede2a43b7ca3e4
+
+
 
 	function __construct()
 	{
 		parent::__construct();
-<<<<<<< HEAD
+
 		//die();
 
 		$this->load->database();
 		$this->layouts="auth";
-=======
+
 		$this->load->database();
->>>>>>> 9f602bbec581c99a247f997abeede2a43b7ca3e4
+
 		$this->load->library(array('ion_auth','form_validation'));
 		$this->load->helper(array('url','language'));
 
@@ -29,10 +28,10 @@ class Auth extends CI_Controller {
 	function index()
 	{
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 9f602bbec581c99a247f997abeede2a43b7ca3e4
+
+
+
 		if (!$this->ion_auth->logged_in())
 		{
 			// redirect them to the login page
@@ -55,7 +54,8 @@ class Auth extends CI_Controller {
 				$this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
 			}
 
-			$this->_render_page('auth/index', $this->data);
+			//$this->_render_page('auth/index', $this->data);
+			$this->view='auth/index';
 		}
 	}
 
@@ -105,13 +105,13 @@ class Auth extends CI_Controller {
 				'type' => 'password',
 			);
 
-<<<<<<< HEAD
+
 			//$this->_render_page('auth/login', $this->data);
 			//$this->load->view('auth/login', $this->data);
 			$this->view='auth/login';
-=======
-			$this->_render_page('auth/login', $this->data);
->>>>>>> 9f602bbec581c99a247f997abeede2a43b7ca3e4
+
+			//$this->_render_page('auth/login', $this->data);
+
 		}
 	}
 
