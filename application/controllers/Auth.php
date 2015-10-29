@@ -174,7 +174,8 @@ class Auth extends MY_Controller {
 			);
 
 			// render
-			$this->_render_page('auth/change_password', $this->data);
+			//$this->_render_page('auth/change_password', $this->data);
+			$this->view='auth/change_password';
 		}
 		else
 		{
@@ -227,7 +228,8 @@ class Auth extends MY_Controller {
 
 			// set any errors and display the form
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-			$this->_render_page('auth/forgot_password', $this->data);
+			//$this->_render_page('auth/forgot_password', $this->data);
+			$this->view='auth/forgot_password';
 		}
 		else
 		{
@@ -313,7 +315,8 @@ class Auth extends MY_Controller {
 				$this->data['code'] = $code;
 
 				// render
-				$this->_render_page('auth/reset_password', $this->data);
+				//$this->_render_page('auth/reset_password', $this->data);
+				$this->view='auth/reset_password';
 			}
 			else
 			{
@@ -404,7 +407,8 @@ class Auth extends MY_Controller {
 			$this->data['csrf'] = $this->_get_csrf_nonce();
 			$this->data['user'] = $this->ion_auth->user($id)->row();
 
-			$this->_render_page('auth/deactivate_user', $this->data);
+			//$this->_render_page('auth/deactivate_user', $this->data);
+			$this->view='auth/deactivate_user';
 		}
 		else
 		{
@@ -536,7 +540,8 @@ class Auth extends MY_Controller {
                 'value' => $this->form_validation->set_value('password_confirm'),
             );
 
-            $this->_render_page('auth/create_user', $this->data);
+            //$this->_render_page('auth/create_user', $this->data);
+            $this->view='auth/create_user';
         }
     }
 
@@ -688,7 +693,8 @@ class Auth extends MY_Controller {
 			'type' => 'password'
 		);
 
-		$this->_render_page('auth/edit_user', $this->data);
+		//$this->_render_page('auth/edit_user', $this->data);
+		$this->view='auth/edit_user';
 	}
 
 	// create a new group
@@ -734,7 +740,8 @@ class Auth extends MY_Controller {
 				'value' => $this->form_validation->set_value('description'),
 			);
 
-			$this->_render_page('auth/create_group', $this->data);
+			//$this->_render_page('auth/create_group', $this->data);
+			$this->view='auth/create_group';
 		}
 	}
 
@@ -799,7 +806,8 @@ class Auth extends MY_Controller {
 			'value' => $this->form_validation->set_value('group_description', $group->description),
 		);
 
-		$this->_render_page('auth/edit_group', $this->data);
+		//$this->_render_page('auth/edit_group', $this->data);
+		$this->view='auth/edit_group';
 	}
 
 
