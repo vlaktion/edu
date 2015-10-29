@@ -21,7 +21,13 @@
 $lang['error_csrf'] = 'This form post did not pass our security checks.';
 
 // Login
-$lang['login_heading']         = 'Login';
+$lang['login_heading']         = 'Sprava';
+$lang['login_admin']         = 'Admin';
+$lang['login_membership']         = 'Register a new membership';
+$lang['facebook']         = 'Sign in using Facebook';
+$lang['google']         = 'Sign in using Google+';
+
+
 $lang['login_subheading']      = 'Please login with your email/username and password below.';
 $lang['login_identity_label']  = 'Email/Username:';
 $lang['login_password_label']  = 'Password:';
