@@ -31,7 +31,7 @@ class Auth extends Application {
 
 
 
-/*
+
 		if (!$this->ion_auth->logged_in())
 		{
 			// redirect them to the login page
@@ -56,7 +56,7 @@ class Auth extends Application {
 
 			//$this->_render_page('auth/index', $this->data);
 			$this->view='auth/index';
-		}*/
+		}
 	}
 
 	// log the user in
