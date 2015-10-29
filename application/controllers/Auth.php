@@ -16,7 +16,7 @@ class Auth extends Application {
 
 		$this->load->database();
 
-		$this->load->library(array('ion_auth','form_validation'));
+		//$this->load->library(array('ion_auth','form_validation'));
 		$this->load->helper(array('url','language'));
 
 		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
@@ -31,7 +31,7 @@ class Auth extends Application {
 
 
 
-
+/*
 		if (!$this->ion_auth->logged_in())
 		{
 			// redirect them to the login page
@@ -56,12 +56,13 @@ class Auth extends Application {
 
 			//$this->_render_page('auth/index', $this->data);
 			$this->view='auth/index';
-		}
+		}*/
 	}
 
 	// log the user in
 	function login()
 	{
+		$this->action = 'login';
 		$this->data['title'] = "Login";
 
 		//validate form input
