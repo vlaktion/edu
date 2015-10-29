@@ -1,4 +1,5 @@
 <?php
+require 'Applciation.php';
 /**
  * A base controller for CodeIgniter with view autoloading, layout support,
  * model loading, helper loading, asides/partials and per-controller 404
