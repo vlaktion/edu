@@ -18,10 +18,10 @@
 			</div>
 
 			<div class="form-group has-feedback">
-				<?php $password= array('class' => 'form-control', 'placeholder' => 'Password','name'=>'password','id'=>'password');?>
+				<?php $password= array('type'=>'password', 'class' => 'form-control', 'placeholder' => 'Password','name'=>'password','id'=>'password');?>
 				<?php echo form_input($password);?>
 				<span class="glyphicon glyphicon-lock form-control-feedback"></span>
-			</div>
+			</div> 
 
 			<div class="row">
 				<div class="col-xs-8">
