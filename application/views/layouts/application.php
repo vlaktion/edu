@@ -327,6 +327,7 @@
                 <li><a href="<?=base_url('/task')?>"><i class="fa fa-circle-o"></i>Ожидание от менеджера</a></li>
                 <li><a href="<?=base_url('/task')?>"><i class="fa fa-circle-o"></i>Возврат в ТО</a></li>
                 <li><a href="<?=base_url('/task')?>"><i class="fa fa-circle-o"></i>Возврат инициатору</a></li>
+                <li><a href="<?=base_url('/auth')?>"><i class="fa fa-circle-o"></i>Редактор юзверей</a></li>
               </ul>
             </li>
             

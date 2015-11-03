@@ -13,7 +13,7 @@ class Auth extends Application {
 
 		$this->load->database();
 		$this->layouts="auth";
-
+		$this->layout = 'layouts/application';
 		$this->load->database();
 
 		//$this->load->library(array('ion_auth','form_validation'));
@@ -390,6 +390,7 @@ class Auth extends Application {
 	// deactivate the user
 	function deactivate($id = NULL)
 	{
+		$this->layout = 'layouts/application';
 		if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin())
 		{
 			// redirect them to the home page because they must be an administrator to view this
