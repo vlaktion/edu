@@ -2,7 +2,7 @@
     <div class="login-box">
 		
 		<div class="login-logo">
-			<b><?php echo lang('login_admin');?></b><?php echo lang('login_heading');?>
+			<img src="<?=base_url('/assets/dist/img/auth_logo.png')?>" width="350">
 		</div><!-- /.login-logo -->
 		<div class="login-box-body">
 			<p class="login-box-msg"><?php echo lang('login_subheading');?></p>
