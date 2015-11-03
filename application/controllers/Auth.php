@@ -662,35 +662,41 @@ class Auth extends Application {
 		$this->data['first_name'] = array(
 			'name'  => 'first_name',
 			'id'    => 'first_name',
+			'class' => 'form-control',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('first_name', $user->first_name),
 		);
 		$this->data['last_name'] = array(
 			'name'  => 'last_name',
 			'id'    => 'last_name',
+			'class' => 'form-control',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('last_name', $user->last_name),
 		);
 		$this->data['company'] = array(
 			'name'  => 'company',
 			'id'    => 'company',
+			'class' => 'form-control',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('company', $user->company),
 		);
 		$this->data['phone'] = array(
 			'name'  => 'phone',
 			'id'    => 'phone',
+			'class' => 'form-control',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('phone', $user->phone),
 		);
 		$this->data['password'] = array(
 			'name' => 'password',
 			'id'   => 'password',
+			'class' => 'form-control',
 			'type' => 'password'
 		);
 		$this->data['password_confirm'] = array(
 			'name' => 'password_confirm',
 			'id'   => 'password_confirm',
+			'class' => 'form-control',
 			'type' => 'password'
 		);
 
